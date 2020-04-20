@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Survey Form</title>
+        <head> 
+            <link rel="stylesheet" type="text/css" href="styles.css">
+        </head>
+    </head>
+    <body>
+        <div class="heading">
+        <h1 id="title"> Cricket Survey Form</h1>
+        <p id="description"> Enter every field and get Amazing awards</p>
+        </div>
+        <div class="main">
+        <form id="survey-form">
+            <label id="name-label">Name: </label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+            
+            <label id="email-label">Email id: </label><br>
+            <input type="email"  id="email" name="email" placeholder="Enter your email ID" required><br>
+            
+            <label id="number-label">Age: </label><br>
+            <input type="number" id="number" name="age" min="10" max="40" placeholder="Enter your age (10-40)" required><br>
+
+            <label id="dropdown-label">Select a role: </label><br>
+            <select id="dropdown" class="role">
+                <option value="batsmen">Batsmen</option>
+                <option value="bowler">Bowler</option>
+                <option value="all-rounder">All rounder</option>
+                <option value="wicketkeeper">Wicket keeper</option>
+            </select><br>
+
+            <div id="radiobutton">
+                <label id="gender">Select your Gender:</label><br>
+                <input type="radio" class="radio" name="gender" value="male">Male<br>
+                <input type="radio" class="radio" name="gender" value="male">Female<br>
+                <input type="radio" class="radio" name="gender" value="male">Others<br>
+            </div>
+            <div id="checkbox">
+                <label id="achievements">Select Your fav Cricketer: </label> <br>
+                <input type="checkbox" class="checkbox" name="player" value="sachin">Sachin Tendulkar<br>
+                <input type="checkbox" class="checkbox" name="player" value="dhoni">MS Dhoni<br>
+                <input type="checkbox" class="checkbox" name="player" value="kohli">Virat Kohli<br>
+                <input type="checkbox" class="checkbox" name="player" value="rohit">Rohit Sharma<br>
+                <input type="checkbox" class="checkbox" name="player" value="bumrah">Bumrah<br>
+                <input type="checkbox" class="checkbox" name="player" value="yuvi">Yuvaraj singh<br>
+            </div><br>
+            <label id="textarea">Favourite cricket momments: </label><br>
+            
+            <textarea placeholder="Enter your favourite cricket momments..."></textarea><br>
+            
+            <button type="submit" id="submit">Submit</button>
+            
+        </form>
+    </div>
+    <br>
+    <footer style="color: green ;text-align: center;">
+        <p><em>Done by <a href="#">@Sravan</a></em></p>
+    </footer>
+    </body>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
